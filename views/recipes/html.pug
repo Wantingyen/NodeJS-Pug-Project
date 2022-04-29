@@ -1,6 +1,4 @@
 html(lang="en")
-  head
-    script(src='scripts.js')
 
 
 div(style='min-height:100px')
@@ -39,11 +37,9 @@ div(style='min-height:100px')
       a.ms-auto(href='/recipes/cake') 
 
     .row.row-cols-auto.col.g-2.py-4.justify-content-evenly
-      if food != '' 
-      food.cake.forEach.function(recipe, recipes)
-        a.col.text-center.category__link(href='/recipes')
-          .category__img.shadow
-            img(#[category.image])
+      a.col.text-center.category__link(href='/recipes')
+        .category__img.shadow
+          img(#{category.image})
 
 
       //- cookie recipes start
@@ -77,10 +73,3 @@ div(style='min-height:100px')
       h2 Beverage Recipes
       a.ms-auto(href='/recipes/beverage') 
 
-
-//- if categories !=''
-//-         categories.forEach.function(category, recipes)
-//-           a.col.text-center.category__link(href='/recipes')
-//-             .category__img.shadow
-//-               img #{caimg}
-//-               src=('img/category.image' alt='category.name' loading='lazy')
