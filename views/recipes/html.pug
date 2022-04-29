@@ -1,0 +1,86 @@
+html(lang="en")
+  head
+    script(src='scripts.js')
+
+
+div(style='min-height:100px')
+#recipes(calss='hero vh-100 d-flex align-items-center')
+  .container
+    h1 All Recipes
+
+    //- Categories Start
+    .row.row-cols-auto.col.g-2.py-4.justify-content-evenly
+      a.col.text-center.category__link(href='/recipes/cake')
+        .category__img.shadow
+          img(src='img/c-cake.jpg' alt='Cake Recipes' loading='lazy')
+
+      a.col.text-center.category__link(href='/recipes/cake')
+        .category__img.shadow
+          img(src='img/c-cookie.jpg' alt='Cake Recipes' loading='lazy')
+
+      a.col.text-center.category__link(href='/recipes/cake')
+        .category__img.shadow
+          img(src='img/c-macaron.jpg' alt='Cake Recipes' loading='lazy')
+
+      a.col.text-center.category__link(href='/recipes/cake')
+        .category__img.shadow
+          img(src='img/c-icecream.jpg' alt='Cake Recipes' loading='lazy')
+
+      a.col.text-center.category__link(href='/recipes/cake')
+        .category__img.shadow
+          img(src='img/c-beverage.jpg' alt='Cake Recipes' loading='lazy')
+
+
+        //- cake recipes start
+
+    .section.pb-4.pt-4
+    .d-flex.mb-2.align-items-center
+      h3 Cake Recipes
+      a.ms-auto(href='/recipes/cake') 
+
+    .row.row-cols-auto.col.g-2.py-4.justify-content-evenly
+      if food != '' 
+      food.cake.forEach.function(recipe, recipes)
+        a.col.text-center.category__link(href='/recipes')
+          .category__img.shadow
+            img(#[category.image])
+
+
+      //- cookie recipes start
+
+    section.pb-4.pt-4
+    .d-flex.mb-2.align-items-center
+      h2 Cookie Recipes
+      a.ms-auto(href='/recipes/cookie') 
+
+
+      //- macaron recipes start
+
+    section.pb-4.pt-4
+    .d-flex.mb-2.align-items-center
+      h2 Macaron Recipes
+      a.ms-auto(href='/recipes/macaron') 
+
+
+      //- ice cream recipes start
+
+    section.pb-4.pt-4
+    .d-flex.mb-2.align-items-center
+      h2 Ice Cream Recipes
+      a.ms-auto(href='/recipes/icecream') 
+
+
+      //- beverage recipes start
+
+    section.pb-4.pt-4
+    .d-flex.mb-2.align-items-center
+      h2 Beverage Recipes
+      a.ms-auto(href='/recipes/beverage') 
+
+
+//- if categories !=''
+//-         categories.forEach.function(category, recipes)
+//-           a.col.text-center.category__link(href='/recipes')
+//-             .category__img.shadow
+//-               img #{caimg}
+//-               src=('img/category.image' alt='category.name' loading='lazy')

@@ -1,0 +1,8 @@
+{
+    "CurrentEnv":"development",
+    "database":{
+        "database": "CompanyName-prod-db",
+        "username": "icode",
+        "host": "https://domain.sub-domain:port=number"
+    }
+}

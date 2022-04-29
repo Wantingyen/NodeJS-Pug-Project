@@ -1,0 +1,8 @@
+{
+    "CurrentEnv":"development",
+    "database":{
+        "database": "CompanyName-dev-db",
+        "username": "icode",
+        "host": "localhost"
+    }
+}
